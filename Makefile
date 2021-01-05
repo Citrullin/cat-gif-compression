@@ -6,7 +6,7 @@ CFLAGS+=-c -Wall -D_REENTRANT $(ADDITIONALFLAGS) $(CPPFLAGS)
 LIBS=-L../$(WEBP_DIR)/build -lc -lwebp
 CFILES=app.c
 OFILES=app.o
-INCLUDE=-I../lib/libwebp/src/
+INCLUDE=-I../lib/libwebp/src/ ../include
 
 all: app
 
